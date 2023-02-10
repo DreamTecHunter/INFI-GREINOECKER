@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University/School Laboratory Report
+% LaTeX Template
+% Version 3.1 (25/3/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{fullpage} %use smaller top and bottom margins
+\usepackage[utf8]{inputenc} %TODO hier ev.  latin1 setzen
+%\headheight = 20pt
+\headsep = 35pt %space between headline and body text
+%\voffset = 0pt
+
+\usepackage{listings}
+\usepackage{courier}
+\usepackage{color}   
+\usepackage{titling}
+\usepackage{float}
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%\usepackage{times} % Uncomment to use the Times New Roman font
+
+% -----------------------------------
+\lstset{language=Python, 
+	basicstyle=\small, 
+	%keywordstyle=\color{purple!80!black!100}, 
+	%identifierstyle=\color{black!50!black!100}, 
+	%commentstyle=\color{green!50!black!100}, 
+	%stringstyle=\ttfamily, 
+	breaklines=true, 
+	numbers=none, 
+	numberstyle=\small, 
+	frame=single, 
+	%backgroundcolor=\color{blue!3},
+	showstringspaces=false,
+} 
+
+\lstset{basicstyle=\ttfamily\scriptsize}
+\lstset{showspaces=false}
+\lstset{showtabs=false}
+\lstset{showstringspaces=false}
+\lstset{keywordstyle=\bfseries}
+\lstset{tabsize=3}
+\lstset{frameround=ffff}
+\lstset{extendedchars=true}
+\lstset{stringstyle=\ttfamily}
+\lstset{commentstyle=\ttfamily}
+\lstset{numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt}
+\lstset{captionpos=b}
+\lstset{frame=single} 
+
+\setlength{\droptitle}{-10em}   % This is your set screw
+
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Übung 01 \\ Kennenlernen von \textbf{R} \\ INFI-IS \\ 5xHWII} 
+\author{Albert Greinöcker} % Author name
+\date{\today} % Date for the report
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+\begin{center}
+
+\includegraphics[width=10cm]{logo.png}
+\end{center}
+\vspace{1cm}
+%----------------------------------------------------------------------------------------
+
+\section{Einfache R-Anweisungen as}
+
+\subsection{Erzeugen von einfachen Zahlenfolgen und Zufallszahlen}
+
+Alle hier erzeugten Daten sollen in einer Variable gespeichert und ausgegeben werden
+
+\subsubsection{Wie können auf einfachem Weg die Zahlen von 100 bis 200 erzeugt werden?}
+
+
+\begin{lstlisting}
+TODO: Hier die R-Befehle eingeben
+\end{lstlisting}
+
+\textit{Ergebnis:}
+
+\begin{verbatim}
+TODO: Hier die R-Befehle eingebe
+\end{verbatim}
+
+
+\subsubsection{Wie können die Zahlen 100 bis 200 mit Abstand 2 (also 100, 102, 104,..) erzeugt werden?}
+
+ \underline{Hinweis}: die Funktion \textbf{seq} könnte hier hilfreich sein.
+ 
+ \begin{lstlisting}
+seq(1,100,2)
+ \end{lstlisting}
+ 
+ \begin{verbatim}
+TODO: Hier die R-Befehle eingebe
+ \end{verbatim}
+ 
+ \subsubsection{Erzeuge 100 Normalverteilte und 100 Gleichverteilte Zahlen}
+ 
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+\section{Einfache Berechnungen / Einfache Auswahl von Zahlen}
+
+Bitte für diesen Teil die normalverteilten Zahlen von \texttt{1.1.3} verwenden un die Ergebnisse wieder in einer \textbf{Variable} speichern.
+
+\begin{itemize}
+	\item x
+	\item y
+\end{itemize}
+
+\subsection{Folgende Kennzahlen berechnen: Mittelwert, Median, Minimum, Maximum, Standardabweichung}
+
+\subsection{Alle Zahlen mit 100 multiplizieren}
+
+\subsection{Nur die ersten 10 Zahlen auswählen}
+
+\subsection{Nur die Werte auswählen, die größer 0 sind}
+
+%----------------------------------------------------------------------------------------
+
+\section{Einfache grafische Darstellungen}
+
+\subsection{Erstellen eines einfachen Liniendiagramms aus den normalverteilten Zahlen von \texttt{1.1.3}}
+
+So wird ein Bild eingefügt:
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.65\textwidth]{placeholder} % Include the image placeholder.png
+		\caption{Figure caption.}
+	\end{center}
+\end{figure}
+
+\subsection{Erstellen eines einfachen Boxplots dieser Zahlen}
+
+
+Der Boxplot soll rot eingefärbt werden
+
+%----------------------------------------------------------------------------------------
+
+\section{Komplexe Datentypen}
+
+\subsection{Bitte eine Variable erzeugen, die die Wochentage als Factor speichert}
+
+\subsection{Diese soll verwendet werden, um einen Data Frame zu erzeugen, der zu jedem Wochentag die Anzahl der Stunden im regulären Stundenplan der Klasse abbildet, gemeinsam mit einer Variable, die die Position des Tages, also MO=1, DI=2, beinhaltet}
+
+%----------------------------------------------------------------------------------------
+
+\section{Kombination aus den oberen Bereichen}
+
+\subsection{Erzeuge ein Data Frame, dass 2 Spalten mit jeweils 1000 Normalverteilten Werten beinhaltet}
+
+\subsection{als 3. Spalte soll eine Variable Geschlecht mit den Ausprägungen 'm' und 'w' vergeben werden}
+
+Diese Werte sollen als Faktoren gespeichert werden \\
+
+\underline{Hinweise}:
+\begin{itemize}
+	\item Mit dem Befehl \textbf{rep} kann man eine Liste erzeugen, mit dem ein Wert eine bestimmte Anzahl oft wiederholt wird
+	\item Der Befehl \textbf{c} fügt mehrere Listen zu einer zusammen
+	\item mit dem Befehl \textbf{cbind} kann man mehrere Spalten zusammenfügen
+\end{itemize}
+
+\subsection{Für die einzelnen Spalten sollen sprechende Bezeichnungen vergeben werden}
+
+\subsection{Erzeuge eine Grafik, die einen Boxplot für 'm' und einen für 'w' enthält, den einen rot, den anderen grün}
+
+
+\end{document}
